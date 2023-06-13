@@ -1,9 +1,9 @@
 import React from "react";
 const Home = () => {
   return (
-    <>
+    <div className="c-home">
       <header>
-        <h2>Sofía Blas</h2>
+       
         <h1>
           Desarrolladora front-end con enfoque resolutivo y apasionada por las
           últimas tendencias.
@@ -128,7 +128,7 @@ const Home = () => {
           </div>
           </article>
       </footer>
-    </>
+    </div>
   );
 };
 export default Home;
