@@ -1,0 +1,29 @@
+.c-main {
+  &__block {
+    margin-bottom: 43px;
+  }
+  &__title {
+    padding: 0 clamp(38px, 15vw, 17em);
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-size: 24px;
+    color: #3b3b3b;
+    & small {
+      font-size: 9px;
+      color: #7bb487;
+    }
+  }
+  &__text {
+    padding: 0 clamp(38px, 15vw, 17em);
+    font-size: clamp(0.7em, 1.2vw, 2em);
+    margin-bottom: 6px;
+  }
+
+
+    &__block-img-x {
+        margin-top: 43px;
+      display: flex;
+      justify-content: center;
+    }
+  
+}

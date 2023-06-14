@@ -1,0 +1,67 @@
+.c-home {
+  position: relative;
+
+  &-header {
+    height: 100vh;
+    background-color: #4f4f4f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: clamp(100px, 9vh, 233px) clamp(50px, 18vw, 200px);
+    margin-bottom: 20px;
+    position: relative;
+
+    &__block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      justify-items: end;
+      gap: 14px;
+    }
+
+    &__title {
+      font-size: 24px;
+      color: #f4dea5;
+      font-weight: 600;
+    }
+
+    &__subtitle {
+      font-size: clamp(8px, 2vw, 16px);
+      color: #cccccc;
+
+      @include desktop {
+        text-align: right;
+      }
+    }
+
+    &__arrow {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: flex-end; 
+      &::before,
+      &::after {
+        content: "";
+        width: 1px;
+        background-color: #8C8C8C;
+      }
+
+      &::before {
+        height: 25px;
+        transform: rotate(45deg) translateX(-50%); 
+        transform-origin: bottom left;
+      }
+
+      &::after {
+        height: 25px;
+        transform: rotate(-45deg) translateX(50%); 
+        transform-origin: bottom right;
+      }
+    }
+  }
+}
