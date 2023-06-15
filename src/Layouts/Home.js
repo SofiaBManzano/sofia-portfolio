@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 const Home = () => {
+  const mainSectionRef = useRef(null);
   const handleArrowClick = () => {
-    const mainSection = document.getElementById("main");
-    mainSection.scrollIntoView({ behavior: "smooth" });
+    mainSectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <div className="c-home">
@@ -37,7 +37,7 @@ const Home = () => {
           ></a>
         </section>
       </header>
-      <main id="main">
+      <main ref={mainSectionRef}>
         <section className="c-main__block">
           <article className="c-main__title">
             <small className="">{"//"}holii</small>

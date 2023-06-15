@@ -16,25 +16,30 @@ const Menu = () => {
 
   return (
     <nav className={`c-menu ${isExpanded ? "is-open" : ""}`}>
-      <h2 className="c-menu__title">Sofía Blas</h2>
-      <button className="c-menu__toggle" onClick={toggleMenu}>
-        <span className="c-menu__toggle-lines"></span>
-        <span className="c-menu__toggle-lines"></span>
-        <span className="c-menu__toggle-lines"></span>
-      </button>
-      <ul className="c-menu__list">    <li className="c-menu__item">
+      <section className="c-menu__header">
+        {" "}
+        <h2 className="c-menu__header-title">Sofía Blas</h2>
+        <button className="c-menu__header-toggle" onClick={toggleMenu}>
+          <span className="c-menu__header-toggle-lines"></span>
+          <span className="c-menu__header-toggle-lines"></span>
+          <span className="c-menu__header-toggle-lines"></span>
+        </button>
+      </section>
+
+      <ul className={`c-menu__list ${isExpanded ? "is-open" : ""}`}>
+        {" "}
+        <li className="c-menu__item">
           <NavLink to="/works">Trabajos</NavLink>
         </li>
-     
         <li className="c-menu__item">
           <NavLink to="/about">About</NavLink>
-        </li>   <li className="c-menu__item">
+        </li>{" "}
+        <li className="c-menu__item">
           <NavLink to="/">Contacto</NavLink>
         </li>
         <li className="c-menu__item">
           <NavLink to="/past">Mi otro lado</NavLink>
         </li>
-    
       </ul>
       <Routes>
         <Route path="/" element={<Home />} />
