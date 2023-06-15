@@ -10,7 +10,7 @@ const Works = () => {
           <p className="c-main__text">
             Si bien mi experiencia puede ser considerada en etapa inicial, cada
             uno de los proyectos presentados aquí representa un hito importante
-            en mi trayectoria profesional. Esto solo son algunos de mis trabajos
+            en mi trayectoria profesional. Esto solo son algunos de mis trabajos.
           </p>
         </article>
 
@@ -58,6 +58,9 @@ const Works = () => {
         <article className="c-main__block">
           {" "}
           <h3 className="c-main__title">Self projects</h3>
+          <p className="c-main__text">
+          Durante mi tiempo de estudio, realicé diversos proyectos personales. Estos proyectos son solo una pequeña muestra.
+          </p>
         </article>
         <article className="c-main__block">
           <p>Juego del ahorcado</p>

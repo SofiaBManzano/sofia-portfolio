@@ -65,10 +65,13 @@
     }
   }
   &-main {
-    padding-top: clamp(5em, 9vw, 14em);
+    // padding-top: clamp(5em, 9vw, 14em);
 
     &__team {
       margin-top: calc(31px - 0.875em);
+    }
+    & .c-main__title {
+      margin-top: 0;
     }
   }
   &-img {

@@ -45,7 +45,7 @@ const Past = () => {
       <article className="c-main__block">
         <p className="c-main__text">
           Así es como se inició este nuevo capítulo en mi vida profesional:
-          <span>✨ el desarrollo web ✨</span>
+          <strong>✨ el desarrollo web ✨</strong>
         </p>
       </article>
     </>

@@ -19,7 +19,7 @@ const Menu = () => {
       <section className="c-menu__header">
         {" "}
         <h2>
-          <NavLink className="c-menu__header-title" to="/">
+          <NavLink className="c-menu__header-title" to="/" onClick={toggleMenu}>
             Sofía Blas
           </NavLink>
         </h2>

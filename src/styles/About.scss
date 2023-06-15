@@ -1,0 +1,47 @@
+.c-about {
+  &-img {
+    position: relative;
+    width: 100%;
+    &__block {
+      flex-direction: column;
+    }
+    &__crooked {
+      max-width: 500px;
+      padding-top: 0.75em;
+      padding-bottom: 4.1875em;
+      padding-left: clamp(38px, 15vw, 17em);
+
+      &-container {
+        aspect-ratio: 141/184;
+        &:first-child {
+          transform: translateY(0px);
+        }
+        &:nth-child(2n) {
+          transform: translate(-37px, 62px);
+        }
+      }
+    }
+    &__container-x {
+      margin-top: calc(31px - 0.875em);
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 183/137;
+    }
+    &__container-y {
+      margin-top: calc(31px - 0.875em);
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 153/247;
+    }
+    &__icon {
+      position: relative;
+      width: 100%;
+      max-width: clamp(30px, 10vw, 100px);
+      margin-top: calc(1rem - 0.875em);
+      margin-bottom: 1rem;
+      aspect-ratio: 30/30;
+    }
+  }
+}
