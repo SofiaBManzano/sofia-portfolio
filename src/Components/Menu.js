@@ -18,7 +18,11 @@ const Menu = () => {
     <nav className={`c-menu ${isExpanded ? "is-open" : ""}`}>
       <section className="c-menu__header">
         {" "}
-        <h2 className="c-menu__header-title">Sofía Blas</h2>
+        <h2>
+          <NavLink className="c-menu__header-title" to="/">
+            Sofía Blas
+          </NavLink>
+        </h2>
         <button className="c-menu__header-toggle" onClick={toggleMenu}>
           <span className="c-menu__header-toggle-lines"></span>
           <span className="c-menu__header-toggle-lines"></span>

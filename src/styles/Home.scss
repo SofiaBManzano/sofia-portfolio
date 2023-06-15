@@ -66,10 +66,7 @@
   }
   &-main {
     padding-top: clamp(5em, 9vw, 14em);
-    &__block-color {
-      padding-top: 2.6875em;
-      padding-bottom: 2.6875em;
-    }
+
     &__team {
       margin-top: calc(31px - 0.875em);
     }
@@ -101,6 +98,30 @@
       width: 100%;
       max-width: 300px;
       aspect-ratio: 247/153;
+    }
+    &__icon {
+      position: relative;
+      width: 100%;
+      max-width: clamp(30px, 10vw, 100px);
+      margin-top: calc(1rem - 0.875em);
+      margin-bottom: 1rem;
+      aspect-ratio: 30/30;
+    }
+  }
+  &__block-color {
+    padding-top: 2.6875em;
+    padding-bottom: 2.6875em;
+  }
+  &-footer {
+    text-align: center;
+    &__talk {
+      border-bottom: 1px solid #3b3b3b;
+      padding-bottom: 0.1875em;
+      display: inline;
+      color: #3b3b3b;
+    }
+    &__rrss {
+      margin-top: 2em;
     }
   }
 }

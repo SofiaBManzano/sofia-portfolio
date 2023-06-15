@@ -1,7 +1,7 @@
 import React from "react";
 const About = () => {
   return (
-    <div>
+    <div className="u-bg-dark">
       {" "}
       <h3 className="c-main__title">Sobre mi</h3>
       <section className="c-main__block">

@@ -72,7 +72,7 @@ const Home = () => {
             </div>
           </article>
         </section>
-        <section className="c-main__block c-home-main__block-color u-bg-dark">
+        <section className="c-main__block c-home__block-color  u-bg-dark">
           <p className="c-main__text u-text-white">
             Mi pasión por el desarrollo web va más allá del código. Valorando la
             estética y la experiencia del usuario, me esfuerzo por lograr un
@@ -124,40 +124,55 @@ const Home = () => {
           </p>
         </section>
       </main>
-      <footer className="c-home-main__block-color u-bg-light">
+      <footer className="c-home__block-color c-home-footer u-bg-light">
         <p className="c-main__text">Gracias por llegar hasta aquí</p>
-        <div className="c-main__block-img-x">
-          <img
-            src="https://via.placeholder.com/29x29"
-            alt="Marcador de posición de imagen"
-            width="29"
-            height="29"
-          />
+        <article className="c-main__block-img-x u-padding-x">
+          <div className=" c-home-img__icon">
+            <img
+              className="u-bg-image"
+              src="https://via.placeholder.com/30x30"
+              alt="Marcador de posición de imagen"
+              width="30"
+              height="30"
+            />
+          </div>
+        </article>
+        <div className="c-main__text">
+          {" "}
+          <a
+            className=" c-home-footer__talk"
+            href="mailto:sofiabmanzano@gmail.com"
+          >
+            ¿Hablamos?
+          </a>
         </div>
-        <p className="c-main__text">¿Hablamos?</p>
-        <article className="c-main__block-img-x">
-          <div>
+
+        <article className="c-main__block-img-x c-home-footer__rrss">
+          <div className=" c-home-img__icon">
             <img
-              src="https://via.placeholder.com/29x29"
+              className="u-bg-image"
+              src="https://via.placeholder.com/30x30"
               alt="Marcador de posición de imagen"
-              width="29"
-              height="29"
+              width="30"
+              height="30"
             />
           </div>
-          <div>
+          <div className=" c-home-img__icon">
             <img
-              src="https://via.placeholder.com/29x29"
+              className="u-bg-image"
+              src="https://via.placeholder.com/30x30"
               alt="Marcador de posición de imagen"
-              width="29"
-              height="29"
+              width="30"
+              height="30"
             />
           </div>
-          <div>
+          <div className=" c-home-img__icon">
             <img
-              src="https://via.placeholder.com/29x29"
+              className="u-bg-image"
+              src="https://via.placeholder.com/30x30"
               alt="Marcador de posición de imagen"
-              width="29"
-              height="29"
+              width="30"
+              height="30"
             />
           </div>
         </article>
