@@ -28,16 +28,16 @@ const Menu = () => {
 
       <ul className={`c-menu__list ${isExpanded ? "is-open" : ""}`}>
         {" "}
-        <li className="c-menu__item">
+        <li className="c-menu__item" onClick={toggleMenu}>
           <NavLink to="/works">Trabajos</NavLink>
         </li>
-        <li className="c-menu__item">
+        <li className="c-menu__item" onClick={toggleMenu}>
           <NavLink to="/about">About</NavLink>
         </li>{" "}
-        <li className="c-menu__item">
+        <li className="c-menu__item" onClick={toggleMenu}>
           <NavLink to="/">Contacto</NavLink>
         </li>
-        <li className="c-menu__item">
+        <li className="c-menu__item" onClick={toggleMenu}>
           <NavLink to="/past">Mi otro lado</NavLink>
         </li>
       </ul>

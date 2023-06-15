@@ -43,25 +43,64 @@
       left: 50%;
       transform: translateX(-50%);
       display: flex;
-      align-items: flex-end; 
+      align-items: flex-end;
       &::before,
       &::after {
         content: "";
         width: 1px;
-        background-color: #8C8C8C;
+        background-color: #8c8c8c;
       }
 
       &::before {
         height: 25px;
-        transform: rotate(45deg) translateX(-50%); 
+        transform: rotate(45deg) translateX(-50%);
         transform-origin: bottom left;
       }
 
       &::after {
         height: 25px;
-        transform: rotate(-45deg) translateX(50%); 
+        transform: rotate(-45deg) translateX(50%);
         transform-origin: bottom right;
       }
+    }
+  }
+  &-main {
+    padding-top: clamp(5em, 9vw, 14em);
+    &__block-color {
+      padding-top: 2.6875em;
+      padding-bottom: 2.6875em;
+    }
+    &__team {
+      margin-top: calc(31px - 0.875em);
+    }
+  }
+  &-img {
+    position: relative;
+    width: 100%;
+    &__crooked {
+      max-width: 500px;
+      padding-top: 0.75em;
+      padding-bottom: 4.1875em;
+      padding-left: clamp(9px, 5vw, 1200px);
+      padding-right: clamp(9px, 5vw, 1200px);
+      &-container {
+        aspect-ratio: 176/200;
+        &:first-child {
+          order: 2;
+          transform: rotate(16deg) translate(-12px, 50px);
+        }
+        &:nth-child(2n) {
+          order: 1;
+          transform: rotate(-5deg) translate(8px, 13px);
+        }
+      }
+    }
+    &__container-x {
+      margin-top: calc(31px - 0.875em);
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 247/153;
     }
   }
 }

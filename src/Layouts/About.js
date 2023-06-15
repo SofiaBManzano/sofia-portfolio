@@ -3,7 +3,7 @@ const About = () => {
   return (
     <div>
       {" "}
-      <h3 className="c-main__title">Professional jobs</h3>
+      <h3 className="c-main__title">Sobre mi</h3>
       <section className="c-main__block">
         <p className="c-main__text">
           ¡Hola! Soy Sofía, y soy front-end developer con sede en Madrid. Aunque

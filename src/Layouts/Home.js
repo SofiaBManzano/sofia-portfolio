@@ -37,7 +37,7 @@ const Home = () => {
           ></a>
         </section>
       </header>
-      <main ref={mainSectionRef}>
+      <main className="c-home-main" ref={mainSectionRef}>
         <section className="c-main__block">
           <article className="c-main__title">
             <small className="">{"//"}holii</small>
@@ -50,44 +50,52 @@ const Home = () => {
             en busca de soluciones innovadoras.
           </p>
           <article className="c-main__block-img">
-            <div className="c-main__block-img-x ">
-              <img
-                src="https://via.placeholder.com/138x217"
-                alt="Marcador de posición de imagen"
-                width="138"
-                height="217"
-              />
-              <div></div>
-              <img
-                src="https://via.placeholder.com/138x217"
-                alt="Marcador de posición de imagen"
-                width="138"
-                height="217"
-              />
+            <div className="c-main__block-img-x c-home-img__crooked">
+              <div className="c-home-img c-home-img__crooked-container">
+                <img
+                  className="u-bg-image"
+                  src="https://via.placeholder.com/138x217"
+                  alt="Marcador de posición de imagen"
+                  width="138"
+                  height="217"
+                />
+              </div>
+              <div className="c-home-img c-home-img__crooked-container">
+                <img
+                  className="u-bg-image"
+                  src="https://via.placeholder.com/138x217"
+                  alt="Marcador de posición de imagen"
+                  width="138"
+                  height="217"
+                />
+              </div>
             </div>
           </article>
         </section>
-        <section className="c-main__block">
-          <p className="c-main__text">
+        <section className="c-main__block c-home-main__block-color u-bg-dark">
+          <p className="c-main__text u-text-white">
             Mi pasión por el desarrollo web va más allá del código. Valorando la
             estética y la experiencia del usuario, me esfuerzo por lograr un
             equilibrio entre funcionalidad y diseño atractivo. Creo que la
             intersección entre la tecnología y el diseño es donde se encuentran
             las mejores experiencias en línea.
           </p>
-          <p className="c-main__text">
+          <p className="c-main__text u-text-white">
             Con habilidades sólidas en HTML, CSS y JavaScript, estoy capacitada
             para desarrollar interfaces interactivas y funcionales que se
             adapten a las expectativas del diseño.
           </p>
-          <div className="c-main__block-img-x">
-            <img
-              src="https://via.placeholder.com/247x153"
-              alt="Marcador de posición de imagen"
-              width="247"
-              height="153"
-            />
-          </div>
+          <article className="c-main__block-img-x u-padding-x">
+            <div className=" c-home-img__container-x">
+              <img
+                className="u-bg-image"
+                src="https://via.placeholder.com/247x153"
+                alt="Marcador de posición de imagen"
+                width="247"
+                height="153"
+              />
+            </div>
+          </article>
         </section>
         <section className="c-main__block">
           <p className="c-main__text">
@@ -96,15 +104,18 @@ const Home = () => {
             accesibles y amigables con los motores de búsqueda para garantizar
             una visibilidad óptima y una experiencia de usuario satisfactoria.
           </p>
-          <div className="c-main__block-img-x">
-            <img
-              src="https://via.placeholder.com/247x153"
-              alt="Marcador de posición de imagen"
-              width="247"
-              height="153"
-            />
-          </div>
-          <p className="c-main__text">
+          <article className="c-main__block-img-x u-padding-x">
+            <div className=" c-home-img__container-x">
+              <img
+                className="u-bg-image"
+                src="https://via.placeholder.com/247x153"
+                alt="Marcador de posición de imagen"
+                width="247"
+                height="153"
+              />
+            </div>
+          </article>
+          <p className="c-main__text c-home-main__team">
             Me encantaría unirme a un equipo dinámico y colaborativo, donde
             pueda seguir creciendo profesionalmente y contribuir con mis
             habilidades como desarrolladora front-end. Estoy lista para
@@ -113,7 +124,7 @@ const Home = () => {
           </p>
         </section>
       </main>
-      <footer className="c-main__block">
+      <footer className="c-home-main__block-color u-bg-light">
         <p className="c-main__text">Gracias por llegar hasta aquí</p>
         <div className="c-main__block-img-x">
           <img

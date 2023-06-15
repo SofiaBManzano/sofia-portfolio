@@ -3,7 +3,7 @@ const Past = () => {
   return (
     <>
       {" "}
-      <h3 className="c-main__title">Professional jobs</h3>
+      <h3 className="c-main__title">¿Quién era antes?</h3>
       <article className="c-main__block">
         {" "}
         <p className="c-main__text">
