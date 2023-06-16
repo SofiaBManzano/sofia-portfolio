@@ -1,0 +1,58 @@
+.c-works {
+  
+  &-img {
+    position: relative;
+    width: 100%;
+
+    &__container-x {
+      margin-top: calc(31px - 0.875em);
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      aspect-ratio: 265/104;
+    }
+
+    &__icon {
+      position: relative;
+      width: 100%;
+      max-width: clamp(30px, 10vw, 100px);
+      margin-top: calc(1rem - 0.875em);
+      margin-bottom: 1rem;
+      aspect-ratio: 130/152;
+    }
+  }
+  &__center {
+    margin: auto;
+    padding: 0 clamp(38px, 15vw, 17em);
+  }
+  &__block {
+    margin-bottom: 72px;
+    &-text {
+      line-height: 6px;
+      margin-bottom: 0.875em;
+      &-configurator {
+        padding-right: clamp(40px, 8vw, 100px);
+      }
+    }
+  }
+  &__text {
+    &-right {
+      text-align: right;
+    }
+    &-title {
+      font-size: 0.6875em;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    &-description {
+      color: #5c765f;
+      font-style: italic;
+      font-size: 0.5625em;
+      margin-bottom: 6px;
+    }
+    &-company {
+      font-size: 0.5625em;
+      color: #999999;
+    }
+  }
+}
