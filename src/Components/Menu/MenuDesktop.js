@@ -1,11 +1,11 @@
 // Menu.js
 
-import { NavLink, Routes, Route } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import React from "react";
-import Home from "../../Layouts/Home";
-import About from "../../Layouts/About";
-import Past from "../../Layouts/Past";
-import Works from "../../Layouts/Works";
+// import Home from "../../Layouts/Home";
+// import About from "../../Layouts/About";
+// import Past from "../../Layouts/Past";
+// import Works from "../../Layouts/Works";
 
 const MenuDesktop = () => {
   return (
@@ -34,12 +34,12 @@ const MenuDesktop = () => {
           <NavLink to="/past">Mi otro lado</NavLink>
         </li>
       </ul>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/past" element={<Past />} />
         <Route path="/works" element={<Works />} />
-      </Routes>
+      </Routes> */}
     </nav>
   );
 };

@@ -20,6 +20,12 @@ const Menu = () => {
   return (
     <>
       {isDesktop ? <MenuDesktop /> : <MenuMobile />}
+      {/* <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/past" element={<Past />} />
+        <Route path="/works" element={<Works />} />
+      </Routes> */}
     </>
   );
 };

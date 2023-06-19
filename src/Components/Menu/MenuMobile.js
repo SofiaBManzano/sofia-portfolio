@@ -1,11 +1,11 @@
 // Menu.js
 
-import { NavLink, Routes, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
-import Home from "../../Layouts/Home";
-import About from "../../Layouts/About";
-import Past from "../../Layouts/Past";
-import Works from "../../Layouts/Works";
+// import Home from "../../Layouts/Home";
+// import About from "../../Layouts/About";
+// import Past from "../../Layouts/Past";
+// import Works from "../../Layouts/Works";
 
 const MenuMobile = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -19,7 +19,7 @@ const MenuMobile = () => {
       <section className="c-menu__header">
         {" "}
         <h2>
-          <NavLink className="c-menu__header-title" to="/" onClick={toggleMenu}>
+          <NavLink className="c-menu__header-title" to="/">
             Sofía Blas
           </NavLink>
         </h2>
@@ -45,12 +45,12 @@ const MenuMobile = () => {
           <NavLink to="/past">Mi otro lado</NavLink>
         </li>
       </ul>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/past" element={<Past />} />
         <Route path="/works" element={<Works />} />
-      </Routes>
+      </Routes> */}
     </nav>
   );
 };
