@@ -1,3 +1,15 @@
+.u-hidden\@desktop {
+  @include desktop {
+    display: none;
+  }
+}
+
+.u-hidden\@mobile {
+  @include tablet {
+    display: none;
+  }
+}
+
 .u-bg-image {
   position: absolute;
   top: 0;
@@ -13,9 +25,9 @@
   color: white;
 }
 
-.u-bg-dark{
-    background-color: #5c765f;
+.u-bg-dark {
+  background-color: #5c765f;
 }
-.u-bg-light{
-    background-color: #F4DEA5;
+.u-bg-light {
+  background-color: #f4dea5;
 }

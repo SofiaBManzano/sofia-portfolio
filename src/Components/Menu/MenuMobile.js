@@ -2,12 +2,12 @@
 
 import { NavLink, Routes, Route } from "react-router-dom";
 import React, { useState } from "react";
-import Home from "../Layouts/Home";
-import About from "../Layouts/About";
-import Past from "../Layouts/Past";
-import Works from "../Layouts/Works";
+import Home from "../../Layouts/Home";
+import About from "../../Layouts/About";
+import Past from "../../Layouts/Past";
+import Works from "../../Layouts/Works";
 
-const Menu = () => {
+const MenuMobile = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleMenu = () => {
@@ -55,4 +55,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default MenuMobile;

@@ -6,11 +6,12 @@ import Home from "./Layouts/Home";
 import About from "./Layouts/About";
 import Past from "./Layouts/Past";
 import Works from "./Layouts/Works";
-import Menu from "./Components/Menu";
+import Menu from "./Components/Menu/Menu";
 
 function App() {
   return (
     <Router>
+      
       <Menu />
       <Routes>
         <Route path="/" element={<Home />} />

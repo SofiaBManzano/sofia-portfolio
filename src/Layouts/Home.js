@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 const Home = () => {
   const mainSectionRef = useRef(null);
   const handleArrowClick = () => {
@@ -148,33 +149,56 @@ const Home = () => {
         </div>
 
         <article className="c-main__block-img-x c-home-footer__rrss">
-          <div className=" c-home-img__icon">
-            <img
-              className="u-bg-image"
-              src="https://via.placeholder.com/30x30"
-              alt="Marcador de posición de imagen"
-              width="30"
-              height="30"
-            />
-          </div>
-          <div className=" c-home-img__icon">
-            <img
-              className="u-bg-image"
-              src="https://via.placeholder.com/30x30"
-              alt="Marcador de posición de imagen"
-              width="30"
-              height="30"
-            />
-          </div>
-          <div className=" c-home-img__icon">
-            <img
-              className="u-bg-image"
-              src="https://via.placeholder.com/30x30"
-              alt="Marcador de posición de imagen"
-              width="30"
-              height="30"
-            />
-          </div>
+          <Link
+            className="c-home-img__icon"
+            to="https://www.linkedin.com/in/sofiablas/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div>
+              <img
+                className="u-bg-image"
+                src="https://via.placeholder.com/30x30"
+                alt="Marcador de posición de imagen"
+                width="30"
+                height="30"
+              />
+            </div>
+          </Link>
+
+          <Link
+            className="c-home-img__icon"
+            to="https://github.com/SofiaBManzano"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div>
+              <img
+                className="u-bg-image"
+                src="https://via.placeholder.com/30x30"
+                alt="Marcador de posición de imagen"
+                width="30"
+                height="30"
+              />
+            </div>
+          </Link>
+
+          <Link
+            className="c-home-img__icon"
+            to="https://www.instagram.com/sofiabmanzano/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div>
+              <img
+                className="u-bg-image"
+                src="https://via.placeholder.com/30x30"
+                alt="Marcador de posición de imagen"
+                width="30"
+                height="30"
+              />
+            </div>
+          </Link>
         </article>
       </footer>
     </div>
