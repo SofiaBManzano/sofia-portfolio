@@ -1,10 +1,10 @@
 import React from "react";
 const Past = () => {
   return (
-    <>
+    <section className="c-main__block">
       {" "}
       <h3 className="c-main__title">¿Quién era antes?</h3>
-      <article className="c-main__block">
+      <article>
         {" "}
         <p className="c-main__text">
           Mi otro lado, el cual descubrí gracias a mi madre y su vena artística,
@@ -23,7 +23,7 @@ const Past = () => {
           decidí estudiar motion graphics.
         </p>
       </article>
-      <article className="c-main__block">
+      <article>
         {" "}
         <p className="c-main__text">
           Aunque estaba satisfecha trabajando como motion grapher y montadora de
@@ -42,13 +42,13 @@ const Past = () => {
           el mundo del desarrollo front-end.
         </p>
       </article>
-      <article className="c-main__block">
+      <article>
         <p className="c-main__text">
           Así es como se inició este nuevo capítulo en mi vida profesional:
           <strong>✨ el desarrollo web ✨</strong>
         </p>
       </article>
-    </>
+    </section>
   );
 };
 export default Past;

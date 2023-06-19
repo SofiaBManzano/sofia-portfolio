@@ -1,6 +1,16 @@
 .c-works {
-  
+  &-bg {
+    padding-bottom: 72px;
+  }
+  &__row {
+    display: grid;
+
+    gap: 1.25em;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+  }
   &-img {
+    align-self: flex-start;
     position: relative;
     width: 100%;
 
@@ -15,7 +25,7 @@
     &__icon {
       position: relative;
       width: 100%;
-      max-width: clamp(30px, 10vw, 100px);
+      // max-width: clamp(30px, 10vw, 100px);
       margin-top: calc(1rem - 0.875em);
       margin-bottom: 1rem;
       aspect-ratio: 130/152;
@@ -27,9 +37,17 @@
   }
   &__block {
     margin-bottom: 72px;
+    & .c-main__block-img-x {
+      margin: 0;
+    }
     &-text {
-      line-height: 6px;
+      display: flex;
+      flex-direction: column;
       margin-bottom: 0.875em;
+
+      & p {
+        margin-bottom: 0;
+      }
       &-configurator {
         padding-right: clamp(40px, 8vw, 100px);
       }
