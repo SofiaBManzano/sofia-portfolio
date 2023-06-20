@@ -1,7 +1,7 @@
 import React from "react";
 const Works = () => {
   return (
-    <>
+    <div className="c-works">
       {" "}
       <section className="c-works__block-primary">
         <article className="c-main__block">
@@ -15,7 +15,7 @@ const Works = () => {
           </p>
         </article>
         <article>
-          <div className="c-main__block c-works__block c-works__center c-works__text-right">
+          <div className="c-main__block c-works__block c-works__primary c-works__center c-works__text-right">
             <div className="c-works__block-text c-works__block-text-configurator">
               <p className=" c-works__text-title">
                 Configurador de ventiladores
@@ -65,7 +65,7 @@ const Works = () => {
           </div>
         </article>
       </section>
-      <section className="c-works-bg u-bg-light">
+      <section className="c-works__block-secondary c-works-bg u-bg-light">
         <article className="c-main__block c-works__block">
           {" "}
           <h3 className="c-main__title">Self projects</h3>
@@ -110,7 +110,7 @@ const Works = () => {
           </div>
         </article>
       </section>
-    </>
+    </div>
   );
 };
 export default Works;

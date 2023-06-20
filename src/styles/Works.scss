@@ -1,4 +1,16 @@
 .c-works {
+  @include tablet {
+    padding-top: clamp(90px, 7vw, 174px);
+    &__primary {
+      display: flex;
+      flex-direction: column;
+      & div:first-child {
+        order: 2;
+
+        padding-right: 0;
+      }
+    }
+  }
   &-bg {
     padding-bottom: 72px;
   }
@@ -8,6 +20,9 @@
     gap: 1.25em;
     grid-template-columns: 1fr 1fr;
     justify-items: stretch;
+    @include tablet {
+      align-items: center;
+    }
   }
 
   &-img {
@@ -52,12 +67,29 @@
       @include tablet {
         display: flex;
         align-items: baseline;
+        padding: 0 clamp(50px, 8vw, 217px);
         h3,
         p {
           padding: 0;
         }
         article {
-          width: 50%;
+          width: calc((100% - 192px) / 2);
+          margin: 0 auto;
+        }
+      }
+    }
+    &-secondary {
+      @include tablet {
+        display: flex;
+        align-items: center;
+        padding: 0 clamp(50px, 8vw, 217px);
+        h3,
+        p {
+          padding: 0;
+        }
+        article {
+          width: calc((100% - 192px) / 2);
+          margin: 0 auto;
         }
       }
     }
