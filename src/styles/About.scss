@@ -1,7 +1,49 @@
 .c-about {
+  @include desktop {
+    max-width: 1700px;
+    margin: auto;
+  }
+
+  &__block {
+    &-primary {
+      @include desktop {
+        display: flex;
+        flex-direction: row;
+        gap: 54px;
+        article {
+          flex: 1 1;
+        }
+        .c-main__text {
+          padding: 0;
+        }
+      }
+    }
+    &--padding-x {
+      @include desktop {
+        padding-left: clamp(1em, 4vw, 4em);
+        padding-right: clamp(1em, 4vw, 4em);
+      }
+    }
+  }
+  &__text {
+    &-tight {
+      @include desktop {
+        text-align: center;
+      }
+    }
+  }
   &-img {
     position: relative;
     width: 100%;
+    &__footer {
+      display: none;
+      font-style: italic;
+      margin-top: 11px;
+      line-height: 1.5;
+      @include desktop {
+        display: block;
+      }
+    }
     &__block {
       flex-direction: column;
     }
@@ -10,6 +52,13 @@
       padding-top: 0.75em;
       padding-bottom: 4.1875em;
       padding-left: clamp(38px, 15vw, 17em);
+      @include desktop {
+        max-width: none;
+        padding-top: 0;
+        padding-bottom: 4.1875em;
+        // padding-right: clamp(38px, 15vw, 17em);
+        padding-left: 0;
+      }
 
       &-container {
         aspect-ratio: 141/184;
@@ -18,6 +67,9 @@
         }
         &:nth-child(2n) {
           transform: translate(-37px, 62px);
+          @include desktop {
+            transform: none;
+          }
         }
       }
     }
@@ -26,8 +78,8 @@
       position: relative;
       width: 100%;
       max-width: 300px;
-      aspect-ratio: 265/104;
-      
+      aspect-ratio: 405/303;
+      margin: auto;
     }
     &__container-y {
       margin-top: calc(31px - 0.875em);

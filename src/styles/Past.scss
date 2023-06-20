@@ -1,12 +1,18 @@
 .c-past {
   &__container-text {
     @include desktop {
-        display: flex;
-        padding: 0 clamp(38px, 15vw, 17em);
-        gap: 116px;
-        max-width: 1800px;
-        justify-content: center;
-        margin: auto;
+      display: flex;
+      padding: 0 clamp(38px, 15vw, 17em);
+      gap: 116px;
+      max-width: 1800px;
+      justify-content: center;
+      margin: auto;
+      .c-past__item {
+        flex: 1;
+        strong {
+          padding-left: 8px;
+        }
+      }
     }
   }
   &__text {

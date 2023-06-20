@@ -4,6 +4,7 @@
     &__primary {
       display: flex;
       flex-direction: column;
+
       & div:first-child {
         order: 2;
 
@@ -37,6 +38,9 @@
       max-width: 300px;
       aspect-ratio: 265/104;
       margin-left: auto;
+      @include tablet {
+        max-width: inherit;
+      }
     }
 
     &__icon {
@@ -66,8 +70,10 @@
     &-primary {
       @include tablet {
         display: flex;
-        align-items: baseline;
+        align-items: flex-start;
         padding: 0 clamp(50px, 8vw, 217px);
+        max-width: 1700px;
+        margin: auto;
         h3,
         p {
           padding: 0;
@@ -82,12 +88,15 @@
       @include tablet {
         display: flex;
         align-items: center;
-        padding: 0 clamp(50px, 8vw, 217px);
+        padding: clamp(50px, 8vw, 100px) clamp(50px, 8vw, 217px);
+        gap: clamp(10px, 4vw, 217px);
+        max-width: 1700px;
+        margin: auto;
         h3,
         p {
           padding: 0;
         }
-        article {
+        .c-works__block {
           width: calc((100% - 192px) / 2);
           margin: 0 auto;
         }
@@ -114,7 +123,7 @@
     }
 
     &-title {
-      font-size: 0.6875em;
+      font-size: clamp(0.6875em, 2vw, 1em);
       font-weight: 500;
       margin-bottom: 10px;
     }
@@ -122,12 +131,12 @@
     &-description {
       color: #5c765f;
       font-style: italic;
-      font-size: 0.5625em;
+      font-size: clamp(0.5625em, 2vw, 0.9625em);
       margin-bottom: 6px;
     }
 
     &-company {
-      font-size: 0.5625em;
+      font-size: clamp(0.5625em, 1.5vw, 0.9625em);
       color: #999999;
     }
   }
