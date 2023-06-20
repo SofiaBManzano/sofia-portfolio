@@ -9,6 +9,8 @@
   z-index: 1050;
   @include desktop {
     height: 100vh;
+    //provisional
+    display: none;
   }
   &__header {
     display: flex;

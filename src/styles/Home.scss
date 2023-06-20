@@ -4,26 +4,64 @@
   &-header {
     height: 100vh;
     background-color: #4f4f4f;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: clamp(100px, 9vh, 233px) clamp(50px, 18vw, 200px);
-    margin-bottom: 20px;
-    position: relative;
 
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: clamp(60px, 11vh, 233px) clamp(50px, 18vw, 200px);
+      // margin-bottom: 20px;
+      position: relative;
+      gap: clamp(0px, 3vw, 40px);
+      height: 100%;
+      @include desktop {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        align-items: start;
+        position: relative;
+
+        margin: auto;
+        max-width: 1375px;
+      }
+    }
+    &__img {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 98/132;
+      @include desktop {
+        position: absolute;
+        top: clamp(100px, 9vh, 233px);
+
+        width: clamp(100px, 20vw, 400px);
+      }
+    }
     &__block {
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: center;
       justify-items: end;
       gap: 14px;
+      @include desktop {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+      }
+      &-subtitle {
+        @include desktop {
+          display: flex;
+          gap: 40px;
+        }
+      }
     }
 
     &__title {
-      font-size: 24px;
+      font-size: clamp(24px, 2.5vw, 38px);
       color: #f4dea5;
       font-weight: 600;
+      @include desktop {
+        font-weight: 400;
+        text-align: right;
+      }
     }
 
     &__subtitle {
@@ -32,6 +70,7 @@
 
       @include desktop {
         text-align: right;
+        color: black;
       }
     }
 
@@ -62,6 +101,9 @@
         transform: rotate(-45deg) translateX(50%);
         transform-origin: bottom right;
       }
+      @include desktop {
+        display: none;
+      }
     }
   }
   &-main {
@@ -84,6 +126,9 @@
       padding-bottom: 4.1875em;
       padding-left: clamp(9px, 5vw, 1200px);
       padding-right: clamp(9px, 5vw, 1200px);
+      @include desktop {
+        padding: 0;
+      }
       &-container {
         aspect-ratio: 176/200;
         &:first-child {
@@ -112,13 +157,73 @@
       aspect-ratio: 30/30;
     }
   }
-  &__block-color {
-    padding-top: 2.6875em;
-    padding-bottom: 2.6875em;
-    
+  &__block {
+    &-primary {
+      @include desktop {
+        max-width: 1300px;
+        margin: auto;
+        display: flex;
+        padding-bottom: 10.6875em;
+        padding-top: 8.6875em;
+        padding-left: 17em;
+        padding-right: 17em;
+        gap: 62px;
+        .c-main__title,
+        .c-main__text {
+          padding: 0;
+        }
+
+        article {
+          width: 50%;
+        }
+      }
+    }
+    &-secondary {
+      @include desktop {
+        display: flex;
+        padding-left: 8em;
+        padding-right: 8em;
+        max-width: 1200px;
+        margin: auto;
+        .c-main__title,
+        .c-main__text {
+          padding: 0;
+        }
+        article {
+          width: 50%;
+        }
+      }
+    }
+    &-terciary {
+      @include desktop {
+        display: flex;
+        gap: clamp(20px, 1vw, 83px);
+        padding-left: 6em;
+        padding-right: 6em;
+        max-width: 1800px;
+        margin: auto;
+        .c-main__title,
+        .c-main__text {
+          padding: 0;
+          width: calc(100% / 3);
+        }
+        article {
+          width: calc(100% / 3);
+        }
+      }
+    }
+    &-color {
+      padding-top: 2.6875em;
+      padding-bottom: 2.6875em;
+    }
   }
   &-footer {
     text-align: center;
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+  
+    }
     &__talk {
       border-bottom: 1px solid #3b3b3b;
       padding-bottom: 0.1875em;

@@ -3,7 +3,7 @@ const Works = () => {
   return (
     <>
       {" "}
-      <section>
+      <section className="c-works__block-primary">
         <article className="c-main__block">
           {" "}
           <h3 className="c-main__title">Professional jobs</h3>
@@ -14,51 +14,54 @@ const Works = () => {
             trabajos.
           </p>
         </article>
-
-        <article className="c-main__block c-works__block c-works__center c-works__text-right">
-          <div className="c-works__block-text c-works__block-text-configurator">
-            <p className=" c-works__text-title">Configurador de ventiladores</p>
-            <p className="c-works__text-description">Desarrollado en React</p>
-            <small className="c-works__text-company">CREATE</small>
+        <article>
+          <div className="c-main__block c-works__block c-works__center c-works__text-right">
+            <div className="c-works__block-text c-works__block-text-configurator">
+              <p className=" c-works__text-title">
+                Configurador de ventiladores
+              </p>
+              <p className="c-works__text-description">Desarrollado en React</p>
+              <small className="c-works__text-company">CREATE</small>
+            </div>
+            <div className=" c-works-img__container-x">
+              <img
+                src="https://via.placeholder.com/265x104"
+                alt="Marcador de posición de imagen"
+                width="265"
+                height="104"
+              />
+            </div>
           </div>
-          <div className=" c-about-img__container-x">
-            <img
-              src="https://via.placeholder.com/265x104"
-              alt="Marcador de posición de imagen"
-              width="265"
-              height="104"
-            />
+          <div className="c-main__block  c-works__block c-works__center c-works__row">
+            <div className="c-main__block-img-x">
+              <img
+                src="https://via.placeholder.com/130x129"
+                alt="Marcador de posición de imagen"
+                width="130"
+                height="129"
+              />
+            </div>
+            <div className="c-works__block-text ">
+              <p className="c-works__text-title">Campaña de verano</p>
+              <p className="c-works__text-description">Hazlo fresco</p>
+              <small className="c-works__text-company">CREATE</small>
+            </div>
           </div>
-        </article>
-        <article className="c-main__block  c-works__block c-works__center c-works__row">
-          <div className="c-main__block-img-x">
-            <img
-              src="https://via.placeholder.com/130x129"
-              alt="Marcador de posición de imagen"
-              width="130"
-              height="129"
-            />
-          </div>
-          <div className="c-works__block-text ">
-            <p className="c-works__text-title">Campaña de verano</p>
-            <p className="c-works__text-description">Hazlo fresco</p>
-            <small className="c-works__text-company">CREATE</small>
-          </div>
-        </article>
-        <article className="c-main__block c-works__block c-works__row c-works__center c-works__text-right">
-          <div className="c-works__block-text ">
-            <p className="c-works__text-title">
-              Rediseño y funcionalidad del menú
-            </p>
-            <small className="c-works__text-company">Sklum</small>
-          </div>
-          <div className="c-main__block-img-x">
-            <img
-              src="https://via.placeholder.com/130x152"
-              alt="Marcador de posición de imagen"
-              width="130"
-              height="152"
-            />
+          <div className="c-main__block c-works__block c-works__row c-works__center c-works__text-right">
+            <div className="c-works__block-text ">
+              <p className="c-works__text-title">
+                Rediseño y funcionalidad del menú
+              </p>
+              <small className="c-works__text-company">Sklum</small>
+            </div>
+            <div className="c-main__block-img-x">
+              <img
+                src="https://via.placeholder.com/130x152"
+                alt="Marcador de posición de imagen"
+                width="130"
+                height="152"
+              />
+            </div>
           </div>
         </article>
       </section>

@@ -8,48 +8,54 @@ const Home = () => {
   return (
     <div className="c-home">
       <header className="c-home-header">
-        <h1 className="c-home-header__title">
-          Desarrolladora front-end con enfoque resolutivo y apasionada por las
-          últimas tendencias.
-        </h1>
-        <section className="c-home-header__block">
-          <article>
-            <p className="c-home-header__subtitle">
-              Curiosa e inquieta, siempre en busca de soluciones innovadoras en
-              el mundo del desarrollo web.{" "}
-            </p>
-            <p className="c-home-header__subtitle">
-              Mi objetivo es crear experiencias impactantes y alineadas con las
-              expectativas actuales del diseño.{" "}
-            </p>
-          </article>
-          <div>
-            <img
-              src="https://via.placeholder.com/98x132"
-              alt="Marcador de posición de imagen"
-              width="98"
-              height="132"
-            />
-          </div>
-          <a
-            href="#main"
-            className="c-home-header__arrow"
-            onClick={handleArrowClick}
-          ></a>
-        </section>
+        <article className="c-home-header__container">
+          <h1 className="c-home-header__title">
+            Desarrolladora front-end con enfoque resolutivo y apasionada por las
+            últimas tendencias.
+          </h1>
+          <section className="c-home-header__block">
+            <article className="c-home-header__block-subtitle">
+              <p className="c-home-header__subtitle">
+                Curiosa e inquieta, siempre en busca de soluciones innovadoras
+                en el mundo del desarrollo web.{" "}
+              </p>
+              <p className="c-home-header__subtitle">
+                Mi objetivo es crear experiencias impactantes y alineadas con
+                las expectativas actuales del diseño.{" "}
+              </p>
+            </article>
+            <div className="c-home-header__img">
+              <img
+                className="u-bg-image"
+                src="https://via.placeholder.com/98x132"
+                alt="Marcador de posición de imagen"
+                width="98"
+                height="132"
+              />
+            </div>
+            <a
+              href="#main"
+              className="c-home-header__arrow"
+              onClick={handleArrowClick}
+            ></a>
+          </section>
+        </article>
       </header>
       <main className="c-home-main" ref={mainSectionRef}>
-        <section className="c-main__block">
-          <article className="c-main__title">
-            <small className="">{"//"}holii</small>
-            <h3>HOLA.</h3>
+        <section className="c-main__block c-home__block-primary">
+          <article>
+            <div className="c-main__title">
+              <small className="">{"//"}holii</small>
+              <h3>HOLA.</h3>
+            </div>
+
+            <p className="c-main__text">
+              Me llamo sofía y llevo un año y pico como front-end developer. Me
+              destaco por mi enfoque resolutivo y mi curiosidad constante,
+              siempre en busca de soluciones innovadoras.
+            </p>
           </article>
 
-          <p className="c-main__text">
-            Me llamo sofía y llevo un año y pico como front-end developer. Me
-            destaco por mi enfoque resolutivo y mi curiosidad constante, siempre
-            en busca de soluciones innovadoras.
-          </p>
           <article className="c-main__block-img">
             <div className="c-main__block-img-x c-home-img__crooked">
               <div className="c-home-img c-home-img__crooked-container">
@@ -74,38 +80,44 @@ const Home = () => {
           </article>
         </section>
         <section className="c-main__block c-home__block-color  u-bg-dark">
-          <p className="c-main__text u-text-white">
-            Mi pasión por el desarrollo web va más allá del código. Valorando la
-            estética y la experiencia del usuario, me esfuerzo por lograr un
-            equilibrio entre funcionalidad y diseño atractivo. Creo que la
-            intersección entre la tecnología y el diseño es donde se encuentran
-            las mejores experiencias en línea.
-          </p>
-          <p className="c-main__text u-text-white">
-            Con habilidades sólidas en HTML, CSS y JavaScript, estoy capacitada
-            para desarrollar interfaces interactivas y funcionales que se
-            adapten a las expectativas del diseño.
-          </p>
-          <article className="c-main__block-img-x u-padding-x">
-            <div className=" c-home-img__container-x">
-              <img
-                className="u-bg-image"
-                src="https://via.placeholder.com/247x153"
-                alt="Marcador de posición de imagen"
-                width="247"
-                height="153"
-              />
-            </div>
-          </article>
+          <div className="c-home__block-secondary">
+            {" "}
+            <article>
+              {" "}
+              <p className="c-main__text u-text-white">
+                Mi pasión por el desarrollo web va más allá del código.
+                Valorando la estética y la experiencia del usuario, me esfuerzo
+                por lograr un equilibrio entre funcionalidad y diseño atractivo.
+                Creo que la intersección entre la tecnología y el diseño es
+                donde se encuentran las mejores experiencias en línea.
+              </p>
+              <p className="c-main__text u-text-white">
+                Con habilidades sólidas en HTML, CSS y JavaScript, estoy
+                capacitada para desarrollar interfaces interactivas y
+                funcionales que se adapten a las expectativas del diseño.
+              </p>
+            </article>
+            <article className="c-main__block-img-x">
+              <div className=" c-home-img__container-x">
+                <img
+                  className="u-bg-image"
+                  src="https://via.placeholder.com/247x153"
+                  alt="Marcador de posición de imagen"
+                  width="247"
+                  height="153"
+                />
+              </div>
+            </article>
+          </div>
         </section>
-        <section className="c-main__block">
+        <section className="c-main__block c-home__block-terciary">
           <p className="c-main__text">
             Además, cuento con experiencia en la optimización de sitios web, SEO
             y rendimiento. Comprendo la importancia de crear sitios web rápidos,
             accesibles y amigables con los motores de búsqueda para garantizar
             una visibilidad óptima y una experiencia de usuario satisfactoria.
           </p>
-          <article className="c-main__block-img-x u-padding-x">
+          <article className="c-main__block-img-x ">
             <div className=" c-home-img__container-x">
               <img
                 className="u-bg-image"
@@ -127,7 +139,7 @@ const Home = () => {
       </main>
       <footer className="c-home__block-color c-home-footer u-bg-light">
         <p className="c-main__text">Gracias por llegar hasta aquí</p>
-        <article className="c-main__block-img-x u-padding-x">
+        <article className="c-main__block-img-x ">
           <div className=" c-home-img__icon">
             <img
               className="u-bg-image"

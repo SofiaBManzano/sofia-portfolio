@@ -2,13 +2,14 @@
   &-bg {
     padding-bottom: 72px;
   }
+
   &__row {
     display: grid;
-
     gap: 1.25em;
     grid-template-columns: 1fr 1fr;
-    justify-items: end;
+    justify-items: stretch;
   }
+
   &-img {
     align-self: flex-start;
     position: relative;
@@ -20,6 +21,7 @@
       width: 100%;
       max-width: 300px;
       aspect-ratio: 265/104;
+      margin-left: auto;
     }
 
     &__icon {
@@ -31,14 +33,33 @@
       aspect-ratio: 130/152;
     }
   }
+
   &__center {
     margin: auto;
     padding: 0 clamp(38px, 15vw, 17em);
+    @include tablet {
+      padding: 0;
+    }
   }
+
   &__block {
     margin-bottom: 72px;
-    & .c-main__block-img-x {
+
+    .c-main__block-img-x {
       margin: 0;
+    }
+    &-primary {
+      @include tablet {
+        display: flex;
+        align-items: baseline;
+        h3,
+        p {
+          padding: 0;
+        }
+        article {
+          width: 50%;
+        }
+      }
     }
     &-text {
       display: flex;
@@ -48,26 +69,31 @@
       & p {
         margin-bottom: 0;
       }
+
       &-configurator {
         padding-right: clamp(40px, 8vw, 100px);
       }
     }
   }
+
   &__text {
     &-right {
       text-align: right;
     }
+
     &-title {
       font-size: 0.6875em;
       font-weight: 500;
       margin-bottom: 10px;
     }
+
     &-description {
       color: #5c765f;
       font-style: italic;
       font-size: 0.5625em;
       margin-bottom: 6px;
     }
+
     &-company {
       font-size: 0.5625em;
       color: #999999;

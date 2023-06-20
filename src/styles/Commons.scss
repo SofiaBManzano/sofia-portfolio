@@ -23,7 +23,7 @@
   }
   &__text {
     padding: 0 clamp(38px, 15vw, 17em);
-    font-size: clamp(0.7em, 1.2vw, 2em);
+    font-size: clamp(0.7em, 1.2vw, 1.5em);
     margin-bottom: 0.875em;
   }
 
@@ -34,5 +34,8 @@
     gap: 1rem;
     // max-width: 200px;
     margin: auto;
+    @include desktop {
+      width: 100%;
+    }
   }
 }
