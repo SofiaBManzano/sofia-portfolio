@@ -1,4 +1,7 @@
 .c-works {
+  &__primary {
+    display: block;
+  }
   @include tablet {
     padding-top: clamp(90px, 7vw, 174px);
     &__primary {
@@ -62,11 +65,16 @@
   }
 
   &__block {
-    margin-bottom: 72px;
+    margin-bottom: 8rem;
 
     .c-main__block-img-x {
       margin: 0;
     }
+
+    @include tablet {
+      padding-top: 0;
+    }
+
     &-primary {
       @include tablet {
         display: flex;
@@ -81,6 +89,9 @@
         article {
           width: calc((100% - 192px) / 2);
           margin: 0 auto;
+        }
+        article:nth-child(2) {
+          max-width: 400px;
         }
       }
     }
@@ -126,6 +137,7 @@
       font-size: clamp(0.6875em, 2vw, 1em);
       font-weight: 500;
       margin-bottom: 10px;
+      color: #3b3b3b;
     }
 
     &-description {

@@ -1,8 +1,8 @@
 import React from "react";
 const About = () => {
   return (
-    <div className="u-bg-dark u-text-white">
-      <article className="c-about">
+    <div className="u-bg-dark u-text-white c-about">
+      <article className="c-about-content">
         <h3 className="c-main__title u-text-white">Sobre mi</h3>
         <section className="c-main__block c-about__block-primary c-about__block--padding-x">
           <article>
@@ -42,15 +42,15 @@ const About = () => {
             </div>
           </article>
         </section>
-        <section className="c-main__block">
-          <p className="c-main__text c-about__text-tight">
+        <section className="c-main__block c-about__block-secondary">
+          <p className="c-main__text c-about__text-center">
             Mi afán por aprender me ha llevado a embarcarme en el aprendizaje en
             UX/UI. Realizo cursos para mejorar mis habilidades, ya que siempre
             he tenido pasión por los detalles estéticos. Quiero aspirar a ser
             una profesional versátil que combina front-end, UX/UI y diseño de
             manera eficaz.
           </p>
-          <p className="c-main__text">
+          <p className="c-main__text  ">
             Fuera del mundo digital, me gusta hacer deporte y descubrir los
             mejores bares con tapa. La comida es, literalmente, lo mejor de la
             vida.
@@ -67,8 +67,8 @@ const About = () => {
             </div>
           </article>
         </section>
-        <section className="c-main__block">
-          <p className="c-main__text">
+        <section className="c-main__block c-about__block-third">
+          <p className="c-main__text c-about__text-center">
             Además, me encanta la fotografía y he trabajado bastante como
             fotógrafa. Sin embargo, actualmente prefiero mantenerla como un
             hobby, ya que me permite disfrutar sin la presión de la

@@ -10,7 +10,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: clamp(60px, 11vh, 233px) clamp(50px, 18vw, 200px);
+      padding: clamp(60px, 11vh, 233px) clamp(50px, 18vw, 180px);
       // margin-bottom: 20px;
       position: relative;
       gap: clamp(0px, 3vw, 40px);
@@ -213,8 +213,8 @@
       }
     }
     &-color {
-      padding-top: 2.6875em;
-      padding-bottom: 2.6875em;
+      padding-top: 5em;
+      padding-bottom: 5em;
     }
   }
   &-footer {
@@ -222,7 +222,6 @@
     @include desktop {
       display: flex;
       flex-direction: column;
-  
     }
     &__talk {
       border-bottom: 1px solid #3b3b3b;

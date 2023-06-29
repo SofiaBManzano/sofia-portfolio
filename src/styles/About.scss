@@ -1,9 +1,15 @@
 .c-about {
-  @include desktop {
-    max-width: 1700px;
-    margin: auto;
-  }
+  // height: 100vh;
+  &-content {
+    @include desktop {
+      max-width: 1200px;
+      margin: auto;
 
+      h3 {
+        padding-left: clamp(1em, 2vw, 4em);
+      }
+    }
+  }
   &__block {
     &-primary {
       @include desktop {
@@ -18,6 +24,36 @@
         }
       }
     }
+    &-secondary {
+      @include desktop {
+        max-width: 520px;
+        margin: auto;
+        display: grid;
+        grid-gap: 40px;
+        padding-top: 0;
+        p:nth-child(1) {
+          grid-column: 1 / 3;
+          padding: 0;
+        }
+        p:nth-child(2) {
+          text-align: right;
+          align-self: center;
+          padding: 0;
+        }
+        article {
+          padding: 0;
+        }
+      }
+    }
+    &-third {
+      @include desktop {
+        .c-main__text {
+          max-width: 520px;
+          margin: auto;
+          padding: 0;
+        }
+      }
+    }
     &--padding-x {
       @include desktop {
         padding-left: clamp(1em, 4vw, 4em);
@@ -26,7 +62,7 @@
     }
   }
   &__text {
-    &-tight {
+    &-center {
       @include desktop {
         text-align: center;
       }
@@ -46,6 +82,13 @@
     }
     &__block {
       flex-direction: column;
+      @include desktop {
+        flex-direction: row;
+        &.u-padding-x {
+          padding-left: clamp(1em, 4vw, 4em);
+          padding-right: clamp(1em, 4vw, 4em);
+        }
+      }
     }
     &__crooked {
       max-width: 500px;
@@ -55,7 +98,7 @@
       @include desktop {
         max-width: none;
         padding-top: 0;
-        padding-bottom: 4.1875em;
+        padding-bottom: 0;
         // padding-right: clamp(38px, 15vw, 17em);
         padding-left: 0;
       }
@@ -79,7 +122,13 @@
       width: 100%;
       max-width: 300px;
       aspect-ratio: 405/303;
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
+      @include desktop {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 600px;
+      }
     }
     &__container-y {
       margin-top: calc(31px - 0.875em);

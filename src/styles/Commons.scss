@@ -7,7 +7,11 @@
   }
   &__block {
     padding-bottom: 43px;
-    padding-top: 2.6875em;
+
+    @include desktop {
+      padding-bottom: 5em;
+      padding-top: 5em;
+    }
   }
   &__title {
     padding: 0 clamp(38px, 15vw, 17em);
@@ -23,7 +27,7 @@
   }
   &__text {
     padding: 0 clamp(38px, 15vw, 17em);
-    font-size: clamp(0.7em, 1.2vw, 1.5em);
+    font-size: clamp(0.7em, 1.2vw, 1em);
     margin-bottom: 0.875em;
   }
 

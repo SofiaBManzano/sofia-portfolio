@@ -1,5 +1,10 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import byeSvg from "../images/bye.svg";
+import iconLinkedin from "../images/linkedin.svg";
+import iconGithub from "../images/github.svg";
+import iconInstagram from "../images/instagram.svg";
+
 const Home = () => {
   const mainSectionRef = useRef(null);
   const handleArrowClick = () => {
@@ -143,7 +148,7 @@ const Home = () => {
           <div className=" c-home-img__icon">
             <img
               className="u-bg-image"
-              src="https://via.placeholder.com/30x30"
+              src={byeSvg}
               alt="Marcador de posición de imagen"
               width="30"
               height="30"
@@ -170,7 +175,7 @@ const Home = () => {
             <div>
               <img
                 className="u-bg-image"
-                src="https://via.placeholder.com/30x30"
+                src={iconLinkedin}
                 alt="Marcador de posición de imagen"
                 width="30"
                 height="30"
@@ -187,7 +192,7 @@ const Home = () => {
             <div>
               <img
                 className="u-bg-image"
-                src="https://via.placeholder.com/30x30"
+                src={iconGithub}
                 alt="Marcador de posición de imagen"
                 width="30"
                 height="30"
@@ -204,7 +209,7 @@ const Home = () => {
             <div>
               <img
                 className="u-bg-image"
-                src="https://via.placeholder.com/30x30"
+                src={iconInstagram}
                 alt="Marcador de posición de imagen"
                 width="30"
                 height="30"
