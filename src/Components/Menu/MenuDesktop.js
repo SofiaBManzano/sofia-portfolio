@@ -1,6 +1,6 @@
 // Menu.js
 
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
 // import Home from "../../Layouts/Home";
 // import About from "../../Layouts/About";
@@ -22,8 +22,8 @@ const MenuDesktop = () => {
       <ul className="c-menu__list">
         {" "}
         <li className="c-menu__item">
-          <NavLink to="/works">Trabajos</NavLink>
-        </li>{" "}
+          <NavLink to="/past">Mi otro lado</NavLink>
+        </li>
         <li className="c-menu__item">
           <NavLink to="/about">About</NavLink>
         </li>{" "}
@@ -31,8 +31,8 @@ const MenuDesktop = () => {
           <NavLink to="/">Contacto</NavLink>
         </li>
         <li className="c-menu__item">
-          <NavLink to="/past">Mi otro lado</NavLink>
-        </li>
+          <NavLink to="/works">Trabajos</NavLink>
+        </li>{" "}
       </ul>
       {/* <Routes>
         <Route path="/" element={<Home />} />

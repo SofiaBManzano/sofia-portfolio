@@ -151,9 +151,9 @@
     &__icon {
       position: relative;
       width: 100%;
-      max-width: clamp(30px, 10vw, 100px);
+      max-width: clamp(30px, 10vw, 80px);
       margin-top: calc(1rem - 0.875em);
-      margin-bottom: 1rem;
+      // margin-bottom: 1rem;
       aspect-ratio: 30/30;
     }
   }
@@ -195,13 +195,16 @@
       }
     }
     &-terciary {
+      padding-top: 5em;
       @include desktop {
-        display: flex;
         gap: clamp(20px, 1vw, 83px);
         padding-left: 6em;
         padding-right: 6em;
         max-width: 1800px;
         margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .c-main__title,
         .c-main__text {
           padding: 0;
@@ -219,6 +222,13 @@
   }
   &-footer {
     text-align: center;
+    article {
+      margin-bottom: 1rem;
+    }
+    & .c-home-footer__rrss .c-home-img__icon {
+      // aspect-ratio: 20/20;
+      max-width: clamp(30px, 5vw, 50px);
+    }
     @include desktop {
       display: flex;
       flex-direction: column;

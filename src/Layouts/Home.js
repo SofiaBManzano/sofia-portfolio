@@ -57,7 +57,7 @@ const Home = () => {
             <p className="c-main__text">
               Me llamo sofía y llevo un año y pico como front-end developer. Me
               destaco por mi enfoque resolutivo y mi curiosidad constante,
-              siempre en busca de soluciones innovadoras.
+              siempre estoy en busca de soluciones innovadoras.
             </p>
           </article>
 

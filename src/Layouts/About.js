@@ -1,4 +1,9 @@
 import React from "react";
+import imgCabo1 from "../images/image-cabo.jpg";
+import imgCabo2 from "../images/image-cabo-2.jpg";
+import imgPhotography1 from "../images/about-photo-1.jpg";
+import imgPhotography2 from "../images/about-photo-2.jpg";
+
 const About = () => {
   return (
     <div className="u-bg-dark u-text-white c-about">
@@ -21,7 +26,7 @@ const About = () => {
               <div className="c-about-img c-about-img__crooked-container">
                 <img
                   className="u-bg-image"
-                  src="https://via.placeholder.com/141x184"
+                  src={imgCabo1}
                   alt="Marcador de posición de imagen"
                   width="141"
                   height="184"
@@ -31,7 +36,7 @@ const About = () => {
               <div className="c-about-img c-about-img__crooked-container">
                 <img
                   className="u-bg-image"
-                  src="https://via.placeholder.com/141x184"
+                  src={imgCabo2}
                   alt="Marcador de posición de imagen"
                   width="141"
                   height="184"
@@ -78,7 +83,7 @@ const About = () => {
             <div className=" c-about-img__container-x">
               <img
                 className="u-bg-image"
-                src="https://via.placeholder.com/405x303"
+                src={imgPhotography1}
                 alt="Marcador de posición de imagen"
                 width="405"
                 height="303"
@@ -87,7 +92,7 @@ const About = () => {
             <div className=" c-about-img__container-x">
               <img
                 className="u-bg-image"
-                src="https://via.placeholder.com/405x303"
+                src={imgPhotography2}
                 alt="Marcador de posición de imagen"
                 width="405"
                 height="303"

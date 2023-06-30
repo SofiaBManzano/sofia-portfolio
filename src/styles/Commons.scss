@@ -6,10 +6,10 @@
     border: red 1px solid;
   }
   &__block {
-    padding-bottom: 43px;
+    padding-bottom: 5em;
 
     @include desktop {
-      padding-bottom: 5em;
+    
       padding-top: 5em;
     }
   }
