@@ -2,10 +2,6 @@
 
 import { NavLink } from "react-router-dom";
 import React from "react";
-// import Home from "../../Layouts/Home";
-// import About from "../../Layouts/About";
-// import Past from "../../Layouts/Past";
-// import Works from "../../Layouts/Works";
 
 const MenuDesktop = () => {
   return (
@@ -28,13 +24,12 @@ const MenuDesktop = () => {
           <NavLink to="/about">About</NavLink>
         </li>{" "}
         <li className="c-menu__item">
-          <NavLink to="/">Contacto</NavLink>
+          <NavLink to="/#contact">Contacto</NavLink>
         </li>
         <li className="c-menu__item">
           <NavLink to="/works">Trabajos</NavLink>
         </li>{" "}
       </ul>
-
     </nav>
   );
 };

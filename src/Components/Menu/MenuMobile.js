@@ -19,7 +19,7 @@ const MenuMobile = () => {
       <section className="c-menu__header">
         {" "}
         <h2>
-          <NavLink className="c-menu__header-title" to="/">
+          <NavLink className="c-menu__header-title" to="/" onClick={toggleMenu}>
             Sofía Blas
           </NavLink>
         </h2>
@@ -39,18 +39,12 @@ const MenuMobile = () => {
           <NavLink to="/about">About</NavLink>
         </li>{" "}
         <li className="c-menu__item" onClick={toggleMenu}>
-          <NavLink to="/">Contacto</NavLink>
+          <NavLink to="#contact">Contacto</NavLink>
         </li>
         <li className="c-menu__item" onClick={toggleMenu}>
           <NavLink to="/past">Mi otro lado</NavLink>
         </li>
       </ul>
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/past" element={<Past />} />
-        <Route path="/works" element={<Works />} />
-      </Routes> */}
     </nav>
   );
 };

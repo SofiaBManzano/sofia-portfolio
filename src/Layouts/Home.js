@@ -12,6 +12,8 @@ import imgLighthouse from "../images/lighthouse.png";
 
 const Home = () => {
   const mainSectionRef = useRef(null);
+
+
   const handleArrowClick = () => {
     mainSectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -160,6 +162,7 @@ const Home = () => {
             />
           </div>
         </article>
+        <section id="contact">
         <div className="c-main__text">
           <a
             className="c-home-footer__talk"
@@ -167,7 +170,7 @@ const Home = () => {
           >
             ¿Hablamos?
           </a>
-        </div>
+        </div></section>
 
         <article className="c-main__block-img-x c-home-footer__rrss">
           <a
