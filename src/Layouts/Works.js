@@ -1,4 +1,7 @@
 import React from "react";
+import configurator from "../images/fans.gif";
+import hazloFresco from "../images/hazlo-fresco.jpg";
+import menuSklum from "../images/menu-sklum.png";
 import iconHarryPotter from "../images/harry-potter.svg";
 import iconSoga from "../images/soga.svg";
 
@@ -29,8 +32,8 @@ const Works = () => {
             </div>
             <div className=" c-works-img__container-x">
               <img
-                src="https://via.placeholder.com/265x104"
-                alt="Marcador de posición de imagen"
+                src={configurator}
+                alt="Configurador de ventiladores"
                 width="265"
                 height="104"
               />
@@ -42,8 +45,8 @@ const Works = () => {
           >
             <div className="c-main__block-img-x">
               <img
-                src="https://via.placeholder.com/130x129"
-                alt="Marcador de posición de imagen"
+                src={hazloFresco}
+                alt="Campaña Hazlo Fresco"
                 width="130"
                 height="129"
               />
@@ -65,12 +68,7 @@ const Works = () => {
               <small className="c-works__text-company">Sklum</small>
             </div>
             <div className="c-main__block-img-x">
-              <img
-                src="https://via.placeholder.com/130x152"
-                alt="Marcador de posición de imagen"
-                width="130"
-                height="152"
-              />
+              <img src={menuSklum} alt="Menú Sklum" width="463" height="832" />
             </div>
           </a>
         </article>
@@ -97,7 +95,7 @@ const Works = () => {
               <img
                 className="u-bg-image"
                 src={iconSoga}
-                alt="Marcador de posición de imagen"
+                alt="Juego del ahorcado"
                 width="130"
                 height="152"
               />
@@ -118,7 +116,7 @@ const Works = () => {
               <img
                 className="u-bg-image"
                 src={iconHarryPotter}
-                alt="Marcador de posición de imagen"
+                alt="Buscador de personajes Harry Potter"
                 width="130"
                 height="152"
               />

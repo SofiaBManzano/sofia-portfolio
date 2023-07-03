@@ -1,6 +1,7 @@
 import React from "react";
 import imgCabo1 from "../images/image-cabo.jpg";
 import imgCabo2 from "../images/image-cabo-2.jpg";
+import imgBar from "../images/img-bar.jpg";
 import imgPhotography1 from "../images/about-photo-1.jpg";
 import imgPhotography2 from "../images/about-photo-2.jpg";
 
@@ -64,7 +65,7 @@ const About = () => {
             <div className=" c-about-img__container-y">
               <img
                 className="u-bg-image"
-                src="https://via.placeholder.com/179x231"
+                src={imgBar}
                 alt="Marcador de posición de imagen"
                 width="179"
                 height="231"

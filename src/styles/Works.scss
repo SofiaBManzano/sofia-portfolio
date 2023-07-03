@@ -3,7 +3,7 @@
     display: block;
   }
   @include tablet {
-    padding-top: clamp(90px, 7vw, 174px);
+    padding-top: clamp(90px, 12vw, 200px);
     &__primary {
       display: flex;
       flex-direction: column;
@@ -25,6 +25,7 @@
     grid-template-columns: 1fr 1fr;
     justify-items: stretch;
     @include tablet {
+      display: flex;
       align-items: center;
     }
   }
@@ -47,8 +48,13 @@
     }
 
     &__icon {
-      &-hangman{
+      @include tablet {
+        max-width: 53px;
+        order: -1;
+      }
+      &-hangman {
         aspect-ratio: 20/52;
+        max-width: fit-content;
       }
       position: relative;
       width: 100%;
@@ -112,6 +118,7 @@
         }
         .c-works__block {
           width: calc((100% - 192px) / 2);
+
           margin: 0 auto;
         }
       }

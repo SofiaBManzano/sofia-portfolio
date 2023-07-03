@@ -18,7 +18,7 @@
       @include desktop {
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr;
-        align-items: start;
+        // align-items: start;
         position: relative;
 
         margin: auto;
@@ -31,7 +31,7 @@
       aspect-ratio: 98/132;
       @include desktop {
         position: absolute;
-        top: clamp(100px, 9vh, 233px);
+        top: clamp(100px, 19vh, 400px);
 
         width: clamp(100px, 20vw, 400px);
       }

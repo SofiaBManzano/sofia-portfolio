@@ -34,12 +34,7 @@ const MenuDesktop = () => {
           <NavLink to="/works">Trabajos</NavLink>
         </li>{" "}
       </ul>
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/past" element={<Past />} />
-        <Route path="/works" element={<Works />} />
-      </Routes> */}
+
     </nav>
   );
 };

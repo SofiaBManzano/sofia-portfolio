@@ -1,9 +1,14 @@
 import React, { useRef } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import byeSvg from "../images/bye.svg";
+import imgCover from "../images/cover.jpg";
 import iconLinkedin from "../images/linkedin.svg";
 import iconGithub from "../images/github.svg";
 import iconInstagram from "../images/instagram.svg";
+import imgBack from "../images/back-to.gif";
+import imgMe1 from "../images/img-me-1.jpg";
+import imgMe2 from "../images/img-me-2.jpg";
+import imgLighthouse from "../images/lighthouse.png";
 
 const Home = () => {
   const mainSectionRef = useRef(null);
@@ -32,7 +37,7 @@ const Home = () => {
             <div className="c-home-header__img">
               <img
                 className="u-bg-image"
-                src="https://via.placeholder.com/98x132"
+                src={imgCover}
                 alt="Marcador de posición de imagen"
                 width="98"
                 height="132"
@@ -66,7 +71,7 @@ const Home = () => {
               <div className="c-home-img c-home-img__crooked-container">
                 <img
                   className="u-bg-image"
-                  src="https://via.placeholder.com/138x217"
+                  src={imgMe1}
                   alt="Marcador de posición de imagen"
                   width="138"
                   height="217"
@@ -75,7 +80,7 @@ const Home = () => {
               <div className="c-home-img c-home-img__crooked-container">
                 <img
                   className="u-bg-image"
-                  src="https://via.placeholder.com/138x217"
+                  src={imgMe2}
                   alt="Marcador de posición de imagen"
                   width="138"
                   height="217"
@@ -106,7 +111,7 @@ const Home = () => {
               <div className=" c-home-img__container-x">
                 <img
                   className="u-bg-image"
-                  src="https://via.placeholder.com/247x153"
+                  src={imgBack}
                   alt="Marcador de posición de imagen"
                   width="247"
                   height="153"
@@ -126,7 +131,7 @@ const Home = () => {
             <div className=" c-home-img__container-x">
               <img
                 className="u-bg-image"
-                src="https://via.placeholder.com/247x153"
+                src={imgLighthouse}
                 alt="Marcador de posición de imagen"
                 width="247"
                 height="153"
@@ -145,20 +150,19 @@ const Home = () => {
       <footer className="c-home__block-color c-home-footer u-bg-light">
         <p className="c-main__text">Gracias por llegar hasta aquí</p>
         <article className="c-main__block-img-x ">
-          <div className=" c-home-img__icon">
+          <div className="c-home-img__icon">
             <img
               className="u-bg-image"
               src={byeSvg}
-              alt="Marcador de posición de imagen"
+              alt="Thanks!"
               width="30"
               height="30"
             />
           </div>
         </article>
         <div className="c-main__text">
-          {" "}
           <a
-            className=" c-home-footer__talk"
+            className="c-home-footer__talk"
             href="mailto:sofiabmanzano@gmail.com"
           >
             ¿Hablamos?
@@ -166,9 +170,9 @@ const Home = () => {
         </div>
 
         <article className="c-main__block-img-x c-home-footer__rrss">
-          <Link
+          <a
             className="c-home-img__icon"
-            to="https://www.linkedin.com/in/sofiablas/"
+            href="https://www.linkedin.com/in/sofiablas/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -176,16 +180,16 @@ const Home = () => {
               <img
                 className="u-bg-image"
                 src={iconLinkedin}
-                alt="Marcador de posición de imagen"
+                alt="Linkedin"
                 width="30"
                 height="30"
               />
             </div>
-          </Link>
+          </a>
 
-          <Link
+          <a
             className="c-home-img__icon"
-            to="https://github.com/SofiaBManzano"
+            href="https://github.com/SofiaBManzano"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -193,16 +197,16 @@ const Home = () => {
               <img
                 className="u-bg-image"
                 src={iconGithub}
-                alt="Marcador de posición de imagen"
+                alt="Github"
                 width="30"
                 height="30"
               />
             </div>
-          </Link>
+          </a>
 
-          <Link
+          <a
             className="c-home-img__icon"
-            to="https://www.instagram.com/sofiabmanzano/"
+            href="https://www.instagram.com/sofiabmanzano/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -210,12 +214,12 @@ const Home = () => {
               <img
                 className="u-bg-image"
                 src={iconInstagram}
-                alt="Marcador de posición de imagen"
+                alt="Instagram"
                 width="30"
                 height="30"
               />
             </div>
-          </Link>
+          </a>
         </article>
       </footer>
     </div>
