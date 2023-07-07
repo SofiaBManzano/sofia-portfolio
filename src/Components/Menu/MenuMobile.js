@@ -1,14 +1,16 @@
 // Menu.js
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-// import Home from "../../Layouts/Home";
-// import About from "../../Layouts/About";
-// import Past from "../../Layouts/Past";
-// import Works from "../../Layouts/Works";
 
 const MenuMobile = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate("/", { hash: "#contact" });
+    setIsExpanded(!isExpanded);
+  };
 
   const toggleMenu = () => {
     setIsExpanded(!isExpanded);
@@ -17,7 +19,6 @@ const MenuMobile = () => {
   return (
     <nav className={`c-menu ${isExpanded ? "is-open" : ""}`}>
       <section className="c-menu__header">
-        {" "}
         <h2>
           <NavLink className="c-menu__header-title" to="/" onClick={toggleMenu}>
             Sofía Blas
@@ -31,15 +32,16 @@ const MenuMobile = () => {
       </section>
 
       <ul className={`c-menu__list ${isExpanded ? "is-open" : ""}`}>
-        {" "}
         <li className="c-menu__item" onClick={toggleMenu}>
           <NavLink to="/works">Trabajos</NavLink>
         </li>
         <li className="c-menu__item" onClick={toggleMenu}>
           <NavLink to="/about">About</NavLink>
-        </li>{" "}
-        <li className="c-menu__item" onClick={toggleMenu}>
-          <NavLink to="#contact">Contacto</NavLink>
+        </li>
+        <li className="c-menu__item">
+          <a href="/#contact" onClick={handleContactClick}>
+            Contacto
+          </a>
         </li>
         <li className="c-menu__item" onClick={toggleMenu}>
           <NavLink to="/past">Mi otro lado</NavLink>

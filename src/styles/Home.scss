@@ -4,7 +4,9 @@
   &-header {
     height: 100vh;
     background-color: #4f4f4f;
-
+    @include desktop {
+      display: flex;
+    }
     &__container {
       display: flex;
       flex-direction: column;
@@ -20,9 +22,10 @@
         grid-template: 1fr 1fr / 1fr 1fr;
         // align-items: start;
         position: relative;
-
+        height: fit-content;
         margin: auto;
         max-width: 1375px;
+        position: relative;
       }
     }
     &__img {
@@ -31,9 +34,9 @@
       aspect-ratio: 98/132;
       @include desktop {
         position: absolute;
-        top: clamp(100px, 19vh, 400px);
+        top: clamp(100px, 12vh, 400px);
 
-        width: clamp(100px, 20vw, 400px);
+        width: clamp(100px, 30vw, 400px);
       }
     }
     &__block {
@@ -45,6 +48,7 @@
       @include desktop {
         grid-column: 1 / 3;
         grid-row: 2 / 3;
+        position: unset;
       }
       &-subtitle {
         @include desktop {

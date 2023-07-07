@@ -1,9 +1,14 @@
 // Menu.js
 
 import { NavLink } from "react-router-dom";
+// import PropTypes from "prop-types";
 import React from "react";
 
 const MenuDesktop = () => {
+  // Menu.propTypes = {
+  //   onContactClick: PropTypes.func.isRequired,
+  // };
+
   return (
     <nav className="c-menu ">
       <section className="c-menu__header">
@@ -24,7 +29,11 @@ const MenuDesktop = () => {
           <NavLink to="/about">About</NavLink>
         </li>{" "}
         <li className="c-menu__item">
-          <NavLink to="/#contact">Contacto</NavLink>
+          <NavLink to="/#contact"
+          //  onClick={props.onContactClick}
+           >
+            Contacto
+          </NavLink>
         </li>
         <li className="c-menu__item">
           <NavLink to="/works">Trabajos</NavLink>

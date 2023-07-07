@@ -25,9 +25,11 @@
     grid-template-columns: 1fr 1fr;
     justify-items: stretch;
     align-items: flex-start;
+
     @include tablet {
       display: flex;
       align-items: center;
+      justify-content: center;
     }
   }
 
@@ -112,6 +114,22 @@
       }
     }
     &-secondary {
+      & .c-works__row {
+        padding: 0 clamp(17px, 21vw, 8rem);
+        flex-grow: 1;
+        @include tablet {
+          padding: 0;
+        }
+        & .c-works__block-text {
+          flex-grow: 2;
+          @include tablet {
+            flex-grow: initial;
+          }
+        }
+        & .c-works-img__icon {
+          flex-grow: 1;
+        }
+      }
       @include tablet {
         display: flex;
         align-items: center;
@@ -125,7 +143,6 @@
         }
         .c-works__block {
           width: calc((100% - 192px) / 2);
-
           margin: 0 auto;
         }
       }

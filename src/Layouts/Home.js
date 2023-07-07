@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
+
 // import { Link } from "react-router-dom";
 import byeSvg from "../images/bye.svg";
 import imgCover from "../images/cover.jpg";
@@ -12,11 +13,17 @@ import imgLighthouse from "../images/lighthouse.png";
 
 const Home = () => {
   const mainSectionRef = useRef(null);
-
-
+  // const contactSectionRef = useRef(null);
   const handleArrowClick = () => {
     mainSectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
+  useEffect(() => {
+    const { hash } = window.location;
+    if (hash && hash === "#main") {
+      mainSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <div className="c-home">
       <header className="c-home-header">
@@ -149,7 +156,10 @@ const Home = () => {
           </p>
         </section>
       </main>
-      <footer className="c-home__block-color c-home-footer u-bg-light">
+      <footer
+        className="c-home__block-color c-home-footer u-bg-light"
+        // ref={contactSectionRef}
+      >
         <p className="c-main__text">Gracias por llegar hasta aquí</p>
         <article className="c-main__block-img-x ">
           <div className="c-home-img__icon">
@@ -162,15 +172,16 @@ const Home = () => {
             />
           </div>
         </article>
-        <section id="contact">
-        <div className="c-main__text">
-          <a
-            className="c-home-footer__talk"
-            href="mailto:sofiabmanzano@gmail.com"
-          >
-            ¿Hablamos?
-          </a>
-        </div></section>
+        <section>
+          <div className="c-main__text">
+            <a
+              className="c-home-footer__talk"
+              href="mailto:sofiabmanzano@gmail.com"
+            >
+              ¿Hablamos?
+            </a>
+          </div>
+        </section>
 
         <article className="c-main__block-img-x c-home-footer__rrss">
           <a
