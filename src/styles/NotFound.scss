@@ -1,0 +1,15 @@
+.c-notfound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  &-link {
+    color: #5c765f;
+    font-weight: 500;
+    &__arrow {
+      padding-right: 14px;
+    }
+  }
+}

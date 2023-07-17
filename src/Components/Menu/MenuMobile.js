@@ -13,6 +13,13 @@ const MenuMobile = () => {
     setIsExpanded(!isExpanded);
   };
 
+  
+  const handleTitleClick = () => {
+    if (isExpanded) {
+      setIsExpanded(false);
+    }
+  };
+
   const toggleMenu = () => {
     setIsExpanded(!isExpanded);
   };
@@ -21,7 +28,9 @@ const MenuMobile = () => {
     <nav className={`c-menu ${isExpanded ? "is-open" : ""}`}>
       <section className="c-menu__header">
         <h2>
-          <NavLink className="c-menu__header-title" to="/sofia-portfolio/" onClick={toggleMenu}>
+          <NavLink className="c-menu__header-title" to="/sofia-portfolio/"
+ onClick={handleTitleClick}
+           >
             Sofía Blas
           </NavLink>
         </h2>

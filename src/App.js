@@ -7,7 +7,7 @@ import About from "./Layouts/About";
 import Past from "./Layouts/Past";
 import Works from "./Layouts/Works";
 import Menu from "./Components/Menu/Menu";
-
+import NotFound from "./Components/NotFound";
 function App() {
 
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/sofia-portfolio/about" element={<About />} />
         <Route path="/sofia-portfolio/past" element={<Past />} />
         <Route path="/sofia-portfolio/works" element={<Works />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
