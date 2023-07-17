@@ -9,15 +9,11 @@ import Works from "./Layouts/Works";
 import Menu from "./Components/Menu/Menu";
 
 function App() {
-  // const contactSectionRef = useRef(null);
-  // const handleContactClick = () => {
-  //   contactSectionRef.current.scrollIntoView({ behavior: "smooth" }); 
-  // };
+
   return (
     <Router>
       
       <Menu 
-      // contactSectionRef={contactSectionRef} onContactClick={handleContactClick} 
       />
 
       <Routes>
