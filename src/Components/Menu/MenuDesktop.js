@@ -1,17 +1,31 @@
 // Menu.js
 
 import { NavLink } from "react-router-dom";
-// import PropTypes from "prop-types";
-import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
+
+import React, { useState, useEffect } from "react";
+
 
 const MenuDesktop = () => {
-  // Menu.propTypes = {
-  //   onContactClick: PropTypes.func.isRequired,
-  // };
-
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const shouldStick = scrollTop > 0;
+  
+      setIsSticky(shouldStick);
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
   return (
     <nav className="c-menu ">
-      <section className="c-menu__header">
+      <section className={`c-menu__header ${isSticky ? "is-sticky" : ""}`}>
         {" "}
         <h2>
           <NavLink className="c-menu__header-title" to="/">
@@ -29,11 +43,9 @@ const MenuDesktop = () => {
           <NavLink to="/about">About</NavLink>
         </li>{" "}
         <li className="c-menu__item">
-          <NavLink to="/#contact"
-          //  onClick={props.onContactClick}
-           >
+          <Link smooth to="/#contact">
             Contacto
-          </NavLink>
+          </Link>
         </li>
         <li className="c-menu__item">
           <NavLink to="/works">Trabajos</NavLink>

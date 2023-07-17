@@ -1,21 +1,31 @@
 .c-about {
   // height: 100vh;
+  @include desktop {
+    padding-top: calc(clamp(90px, 12vw, 200px) - 5em);
+  }
   &-content {
     @include desktop {
       max-width: 1200px;
       margin: auto;
 
-      h3 {
-        padding-left: clamp(1em, 2vw, 4em);
-      }
+      // h3 {
+      //   padding-left: clamp(1em, 2vw, 4em);
+      // }
     }
   }
   &__block {
+    &-title {
+      @include desktop {
+        padding-left: 0;
+        padding-top: 0;
+      }
+    }
     &-primary {
       @include desktop {
         display: flex;
         flex-direction: row;
         gap: 54px;
+        // padding-top: 20px;
         article {
           flex: 1 1;
         }

@@ -9,9 +9,10 @@ const About = () => {
   return (
     <div className="u-bg-dark u-text-white c-about">
       <article className="c-about-content">
-        <h3 className="c-main__title u-text-white">Sobre mi</h3>
+        {/* <h3 className="c-main__title u-text-white">Sobre mi</h3> */}
         <section className="c-main__block c-about__block-primary c-about__block--padding-x">
           <article>
+          <h3 className="c-main__title c-about__block-title u-text-white">Sobre mi</h3>
             <p className="c-main__text">
               ¡Hola! Soy Sofía, y soy front-end developer con sede en Madrid.
               Aunque vivo aquí, tengo mucha conexión con Almería.{" "}

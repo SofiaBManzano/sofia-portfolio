@@ -158,6 +158,7 @@ const Home = () => {
       </main>
       <footer
         className="c-home__block-color c-home-footer u-bg-light"
+        id="contact"
         // ref={contactSectionRef}
       >
         <p className="c-main__text">Gracias por llegar hasta aquí</p>

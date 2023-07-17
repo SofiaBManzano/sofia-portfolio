@@ -2,6 +2,7 @@
 
 import { NavLink, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 const MenuMobile = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -39,9 +40,9 @@ const MenuMobile = () => {
           <NavLink to="/about">About</NavLink>
         </li>
         <li className="c-menu__item">
-          <a href="/#contact" onClick={handleContactClick}>
+          <Link smooth to="/#contact" onClick={handleContactClick}>
             Contacto
-          </a>
+          </Link>
         </li>
         <li className="c-menu__item" onClick={toggleMenu}>
           <NavLink to="/past">Mi otro lado</NavLink>
