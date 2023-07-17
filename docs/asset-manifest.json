@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.92399dcc.css",
+    "main.js": "/static/js/main.02235956.js",
+    "static/js/787.4f684e42.chunk.js": "/static/js/787.4f684e42.chunk.js",
+    "static/media/back-to.gif": "/static/media/back-to.3e681d8aa54c62967594.gif",
+    "static/media/fans.gif": "/static/media/fans.e050f38a3e9561dd9f1e.gif",
+    "static/media/hazlo-fresco.jpg": "/static/media/hazlo-fresco.6237dea72ec1fc62b66b.jpg",
+    "static/media/about-photo-2.jpg": "/static/media/about-photo-2.77a81b33a7d7e4320a04.jpg",
+    "static/media/cover.jpg": "/static/media/cover.3d6671b391eaaa3b8644.jpg",
+    "static/media/menu-sklum.png": "/static/media/menu-sklum.e063a38096b6a231d7e5.png",
+    "static/media/image-cabo-2.jpg": "/static/media/image-cabo-2.c9c5b451433f075f9444.jpg",
+    "static/media/image-cabo.jpg": "/static/media/image-cabo.8ef02b1417bf7ca5adb8.jpg",
+    "static/media/about-photo-1.jpg": "/static/media/about-photo-1.32ab9958cbe0a9d90861.jpg",
+    "static/media/img-bar.jpg": "/static/media/img-bar.569fea0b734900ca529f.jpg",
+    "static/media/img-me-2.jpg": "/static/media/img-me-2.7cf78d380cfb1c44408b.jpg",
+    "static/media/img-me-1.jpg": "/static/media/img-me-1.a6d08798a365b9a8e863.jpg",
+    "static/media/bye.svg": "/static/media/bye.d1e42a2c3447bc43a1ab9107904f3ca3.svg",
+    "static/media/lighthouse.png": "/static/media/lighthouse.0c415e35e7eb4aaab97b.png",
+    "static/media/instagram.svg": "/static/media/instagram.7a5d9d5cad3e4e99ae2770e7a83e78e6.svg",
+    "static/media/github.svg": "/static/media/github.406b7026c60c02c6140a70eca21f8748.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.c34c19edd5bc2f14371639b1f020ff15.svg",
+    "static/media/harry-potter.svg": "/static/media/harry-potter.41c406000c54154e19bf2b22605f4bb8.svg",
+    "static/media/soga.svg": "/static/media/soga.4173c231dec1cbe453e0cdc06f104b77.svg",
+    "index.html": "/index.html",
+    "main.92399dcc.css.map": "/static/css/main.92399dcc.css.map",
+    "main.02235956.js.map": "/static/js/main.02235956.js.map",
+    "787.4f684e42.chunk.js.map": "/static/js/787.4f684e42.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92399dcc.css",
+    "static/js/main.02235956.js"
+  ]
+}
