@@ -17,10 +17,10 @@ function App() {
       />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/past" element={<Past />} />
-        <Route path="/works" element={<Works />} />
+        <Route path="/sofia-portfolio/" element={<Home />} />
+        <Route path="/sofia-portfolio/about" element={<About />} />
+        <Route path="/sofia-portfolio/past" element={<Past />} />
+        <Route path="/sofia-portfolio/works" element={<Works />} />
       </Routes>
     </Router>
   );

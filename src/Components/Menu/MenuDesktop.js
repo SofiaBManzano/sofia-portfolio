@@ -28,7 +28,7 @@ const MenuDesktop = () => {
       <section className={`c-menu__header ${isSticky ? "is-sticky" : ""}`}>
         {" "}
         <h2>
-          <NavLink className="c-menu__header-title" to="/">
+          <NavLink className="c-menu__header-title" to="/sofia-portfolio/">
             Sofía Blas
           </NavLink>
         </h2>
@@ -37,18 +37,18 @@ const MenuDesktop = () => {
       <ul className="c-menu__list">
         {" "}
         <li className="c-menu__item">
-          <NavLink to="/past">Mi otro lado</NavLink>
+          <NavLink to="/sofia-portfolio/past">Mi otro lado</NavLink>
         </li>
         <li className="c-menu__item">
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/sofia-portfolio/about">About</NavLink>
         </li>{" "}
         <li className="c-menu__item">
-          <Link smooth to="/#contact">
+          <Link smooth to="/sofia-portfolio/#contact">
             Contacto
           </Link>
         </li>
         <li className="c-menu__item">
-          <NavLink to="/works">Trabajos</NavLink>
+          <NavLink to="/sofia-portfolio/works">Trabajos</NavLink>
         </li>{" "}
       </ul>
     </nav>

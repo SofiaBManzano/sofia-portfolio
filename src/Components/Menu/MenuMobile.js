@@ -21,7 +21,7 @@ const MenuMobile = () => {
     <nav className={`c-menu ${isExpanded ? "is-open" : ""}`}>
       <section className="c-menu__header">
         <h2>
-          <NavLink className="c-menu__header-title" to="/" onClick={toggleMenu}>
+          <NavLink className="c-menu__header-title" to="/sofia-portfolio/" onClick={toggleMenu}>
             Sofía Blas
           </NavLink>
         </h2>
@@ -34,18 +34,22 @@ const MenuMobile = () => {
 
       <ul className={`c-menu__list ${isExpanded ? "is-open" : ""}`}>
         <li className="c-menu__item" onClick={toggleMenu}>
-          <NavLink to="/works">Trabajos</NavLink>
+          <NavLink to="/sofia-portfolio/works">Trabajos</NavLink>
         </li>
         <li className="c-menu__item" onClick={toggleMenu}>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/sofia-portfolio/about">About</NavLink>
         </li>
         <li className="c-menu__item">
-          <Link smooth to="/#contact" onClick={handleContactClick}>
+          <Link
+            smooth
+            to="/sofia-portfolio/#contact"
+            onClick={handleContactClick}
+          >
             Contacto
           </Link>
         </li>
         <li className="c-menu__item" onClick={toggleMenu}>
-          <NavLink to="/past">Mi otro lado</NavLink>
+          <NavLink to="/sofia-portfolio/past">Mi otro lado</NavLink>
         </li>
       </ul>
     </nav>
