@@ -13,7 +13,8 @@ import imgLighthouse from "../images/lighthouse.png";
 
 const Home = () => {
   const mainSectionRef = useRef(null);
-  // const contactSectionRef = useRef(null);
+  const headerRef = useRef(null);
+
   const handleArrowClick = () => {
     mainSectionRef.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -24,9 +25,24 @@ const Home = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      const height = window.innerHeight;
+      headerRef.current.style.height = `${height}px`;
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="c-home">
-      <header className="c-home-header">
+      <header className="c-home-header" ref={headerRef}>
         <article className="c-home-header__container">
           <h1 className="c-home-header__title">
             Desarrolladora front-end con enfoque resolutivo y apasionada por las
@@ -159,7 +175,7 @@ const Home = () => {
       <footer
         className="c-home__block-color c-home-footer u-bg-light"
         id="contact"
-        // ref={contactSectionRef}
+
       >
         <p className="c-main__text">Gracias por llegar hasta aquí</p>
         <article className="c-main__block-img-x ">
