@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sofia-portfolio/static/css/main.92399dcc.css",
-    "main.js": "/sofia-portfolio/static/js/main.ba30b557.js",
+    "main.css": "/sofia-portfolio/static/css/main.b2ddc0dd.css",
+    "main.js": "/sofia-portfolio/static/js/main.189dad77.js",
     "static/js/787.4f684e42.chunk.js": "/sofia-portfolio/static/js/787.4f684e42.chunk.js",
     "static/media/back-to.gif": "/sofia-portfolio/static/media/back-to.3e681d8aa54c62967594.gif",
     "static/media/fans.gif": "/sofia-portfolio/static/media/fans.e050f38a3e9561dd9f1e.gif",
@@ -23,12 +23,12 @@
     "static/media/harry-potter.svg": "/sofia-portfolio/static/media/harry-potter.41c406000c54154e19bf2b22605f4bb8.svg",
     "static/media/soga.svg": "/sofia-portfolio/static/media/soga.4173c231dec1cbe453e0cdc06f104b77.svg",
     "index.html": "/sofia-portfolio/index.html",
-    "main.92399dcc.css.map": "/sofia-portfolio/static/css/main.92399dcc.css.map",
-    "main.ba30b557.js.map": "/sofia-portfolio/static/js/main.ba30b557.js.map",
+    "main.b2ddc0dd.css.map": "/sofia-portfolio/static/css/main.b2ddc0dd.css.map",
+    "main.189dad77.js.map": "/sofia-portfolio/static/js/main.189dad77.js.map",
     "787.4f684e42.chunk.js.map": "/sofia-portfolio/static/js/787.4f684e42.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92399dcc.css",
-    "static/js/main.ba30b557.js"
+    "static/css/main.b2ddc0dd.css",
+    "static/js/main.189dad77.js"
   ]
 }
