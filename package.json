@@ -13,7 +13,7 @@
     "react-scripts": "5.0.1",
     "sass": "^1.63.3",
     "web-vitals": "^2.1.4",
-    "homepage": "https://sofiabmanzano.github.io/sofia-portfolio/"
+    "homepage": "https://sofiabmanzano.github.io/sofia-portfolio"
   },
   "scripts": {
     "start": "react-scripts start",
