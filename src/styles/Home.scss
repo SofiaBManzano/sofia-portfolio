@@ -2,9 +2,10 @@
   position: relative;
 
   &-header {
-    height: 100vh;
+    height: calc(100vh - env(safe-area-inset-top));
     background-color: #4f4f4f;
     @include desktop {
+      height: 100vh;
       display: flex;
     }
     &__container {
